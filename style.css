@@ -1,0 +1,151 @@
+body {
+  font-family: pt-sans;
+  color: white;
+  background-color: rgb(20, 20, 20);
+  padding: 0px;
+  margin: 0px;
+}
+
+#top {
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#foot {
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 20px 5% 20px 5%;
+  background-color: rgb(40,40,40);
+  text-align:center;
+}
+
+.section {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 30px;
+  color: rgb(40,40,40);
+  animation: fade-in 2s ease forwards 2s;
+}
+
+h1 {
+  font-size: 40px;
+  display: inline;
+  border-top: 4px solid rgb(40,40,40);
+  animation: fade-overline 2s ease forwards 2s;
+}
+
+.initiative {
+  /* margin-left: -10px; */
+  border-left: 2px solid rgb(40,40,40);
+  padding-left: 8px;
+  animation: fade-leftbar 2s ease forwards 2s;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+a {
+  color: rgb(40,40,40);
+  text-decoration: none;
+  animation: fade-link 2s ease forwards 2s
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#footer-cs-logo {
+  width: 30%;
+}
+
+@media all and (max-width: 600px) {
+  h1 {
+    font-size: 7vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  .section {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 30px;
+  }
+  #top {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 15%;
+  }
+  #footer-cs-logo {
+    width: 70%;
+  }
+}
+
+
+#title-logo path:nth-child(2) {
+  stroke-dasharray: 500px;
+  stroke-dashoffset: 500px;
+  animation: anim 2s ease forwards 0.5s, fill 2s ease forwards 2s;
+  fill: rgb(40, 40, 40);
+}
+#title-logo path:nth-child(3) {
+  stroke-dasharray: 400px;
+  stroke-dashoffset: 400px;
+  animation: fill 2s ease forwards 2s;
+  fill: rgb(40, 40, 40);
+}
+#title-logo path:nth-child(4) {
+  stroke-dasharray: 700px;
+  stroke-dashoffset: 700px;
+  animation: anim 2s ease forwards 0.5s, fill 2s ease forwards 2s;
+  fill: rgb(40, 40, 40);
+}
+#title-logo path:nth-child(5) {
+  stroke-dasharray: 550px;
+  stroke-dashoffset: 550px;
+  animation: anim 2s ease forwards 0.5s, fill 2s ease forwards 2s;
+  fill: rgb(40, 40, 40);
+}
+
+@keyframes anim{
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill{
+  to{
+    fill: white;
+  }
+  to{
+    stroke-width: 0;
+  }
+}
+
+
+@keyframes fade-in{
+  to{
+    color:white;
+  }
+}
+
+@keyframes fade-overline{
+  to{
+    border-top: 4px solid rgb(242,128,52);
+  }
+}
+
+@keyframes fade-leftbar{
+  to{
+    border-left: 2px solid rgb(135,135,135);
+  }
+}
+
+@keyframes fade-link{
+  to{
+    color: rgb(242,128,52);
+  }
+}
