@@ -32,7 +32,7 @@ body {
 
 h1 {
   font-size: 40px;
-  display: inline;
+  display: block;
   border-top: 4px solid rgb(245,245,245);
   animation: fade-overline 2s ease forwards 2s;
 }
@@ -59,8 +59,24 @@ a:hover {
   text-decoration: none;
 }
 
+.speaker {
+  text-align: justify;
+}
+
+img {opacity: 0.15;
+animation: fade-image 2s ease forwards 2s;}
+img.wrap {float: right}
+
 #footer-cs-logo {
   width: 30%;
+}
+
+.mobile {display: none}
+  .desktop {display: inline}
+
+@media all and (max-width: 1000px) {
+  .mobile {display: inline}
+  .desktop {display: none}
 }
 
 @media all and (max-width: 600px) {
@@ -83,36 +99,39 @@ a:hover {
   #footer-cs-logo {
     width: 70%;
   }
+  .speaker {
+  text-align: left;
+  }
 }
 
 
 #title-logo path:nth-child(2) {
-  stroke: black;
+  stroke: rgb(105,135,153);
   stroke-dasharray: 500px;
   stroke-dashoffset: 500px;
   animation: anim 2s ease forwards 0.5s, fill 2s ease forwards 2s;
-  fill: rgb(245,245,245);
+  fill: rgba(105, 135, 153, 0.2);
 }
 #title-logo path:nth-child(3) {
-  stroke: black;
+  stroke: rgb(105,135,153);
   stroke-dasharray: 400px;
   stroke-dashoffset: 400px;
   animation: fill 2s ease forwards 2s;
-  fill: rgb(245,245,245);
+  fill: rgba(105, 135, 153, 0.2);
 }
 #title-logo path:nth-child(4) {
-  stroke: black;
+  stroke: rgb(105,135,153);
   stroke-dasharray: 700px;
   stroke-dashoffset: 700px;
   animation: anim 2s ease forwards 0.5s, fill 2s ease forwards 2s;
-  fill: rgb(245,245,245);
+  fill: rgba(105, 135, 153, 0.2);
 }
 #title-logo path:nth-child(5) {
-  stroke: black;
+  stroke: rgb(105,135,153);
   stroke-dasharray: 550px;
   stroke-dashoffset: 550px;
   animation: anim 2s ease forwards 0.5s, fill 2s ease forwards 2s;
-  fill: rgb(245,245,245);
+  fill: rgba(105, 135, 153, 0.2);
 }
 
 @keyframes anim{
@@ -123,7 +142,7 @@ a:hover {
 
 @keyframes fill{
   to{
-    fill: rgb(40,40,40);
+    fill: rgb(105,135,153);
   }
   to{
     stroke-width: 0;
@@ -137,20 +156,26 @@ a:hover {
   }
 }
 
+@keyframes fade-image{
+  to{
+    opacity: 1.0;
+  }
+}
+
 @keyframes fade-overline{
   to{
-    border-top: 4px solid rgb(40,40,40);
+    border-top: 4px solid rgb(105,135,153);
   }
 }
 
 @keyframes fade-leftbar{
   to{
-    border-left: 2px solid rgb(40,40,40);
+    border-left: 2px solid rgb(105,135,153);
   }
 }
 
 @keyframes fade-link{
   to{
-    color: rgb(242,128,52);
+    color:rgb(105,135,153);
   }
 }
