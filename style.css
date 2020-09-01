@@ -78,6 +78,16 @@ h4 {
   font-weight: 600;
 }
 
+#banner {
+  font-family: source-code-pro, monospace;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background-color: #F03E4E;
+}
+
 .initiative {
   display: flex;
   flex-wrap: wrap;
