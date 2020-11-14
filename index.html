@@ -35,18 +35,25 @@ $(document).ready(function(){
 });
 </script>
   </head>
+
   <body>
+    <div class="topnav navbar sticky">
+  <a href="index.html"><img src="logo.svg" style="height: 37px; margin-top: -7px;"></a>
+  <div class="topnav-right">
+    <a href="resources.html">Resources</a>
+  </div>
+</div>
+
     <div class="title-page">
-    <img src="logo.svg" style="height: 50px; margin-left: 15px; margin-top: 10px">
+    <!-- <img src="logo.svg" style="height: 50px; margin-left: 15px; margin-top: 10px"> -->
     <img id="title-img" class="centered" src="title-blobs.svg">
     <h1 id="title" class="centered"> Technology for a Just Society </h1>
     <div class="container">
     <a href="#about" class="arrow down">Down</a>
     </div>
     </div>
-
-
-    <!-- <div id="banner"><p><strong>UPCOMING EVENT: Using Data to Make Maps Fairer,</strong> with Professor Sam Wang. September 8th at 4:00pm ET. Register <a style="color: white" href="https://forms.gle/J8TL1qLPaXsZpPUm9" target="_blank">here</a>.</p></div> -->
+    
+    <div id="banner"><p><strong>UPCOMING EVENT: Social Computing for Good,</strong> with Andrés Monroy-Hernández. Wednesday, October 18th at 5:00pm ET. Register <a style="color: white" href="https://docs.google.com/forms/d/e/1FAIpQLSdHTkJdQg8OvxAeupEFWgoQD_s-8aWJ-1CmrC4gBjz8i1CrOA/viewform?usp=sf_link" target="_blank">here</a>.</p></div>
 
     <div id="about" class="section">
     <h3 class="overline">OUR MISSION</h3>
@@ -85,8 +92,7 @@ $(document).ready(function(){
 
     <div class="section">
     <h3 class="overline">WHAT WE DO</h3>
-    <h1 class="heading"> Our Initiatives </h1>
-    <p> We are currently working on several initiatives. If you would like to become involved, or receive updates about upcoming events and opportunities, please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0-FGxoYu-f3tNDZtOUo_SGZu7GE24hulQdtcD28qKAX5GXg/viewform?usp=sf_link">this form</a>.</p>
+
 
     <div class="initiative">
     <div class="initiative-info">
@@ -96,10 +102,14 @@ $(document).ready(function(){
     
     
     <p><strong>Previous Talks:</strong></p>
-    <p> Dr. Sam Wang, professor of neuroscience and founder of the <a href="http://gerrymander.princeton.edu">Princeton Gerrymandering Project</a>, discussed how data, law, and math can be used to achieve fair representation through redistricting reform.</p>
+    <p><a href="http://md4sg.com/workinggroups/fairness.html">MD4SG</a>, on bias, discrimination, and fairness in mechanism design.
+    </p>
+    <p> Dr. Sam Wang, founder of the <a href="http://gerrymander.princeton.edu">Princeton Gerrymandering Project</a>, on how data, law, and math can be used to achieve fair representation through redistricting reform.</p>
     <p><a href="http://www.ethanzuckerman.com/blog/about-me/">Ethan Zuckerman</a>, on the pitfalls of using technology to solve social problems.
     </p>
-    <p><strong>Upcoming:</strong></p> <p><a href="http://md4sg.com/workinggroups/fairness.html">MD4SG Bias, Discrimination, and Fairness Working Group</a> (September).</p>
+    <p><strong>Upcoming:</strong></p> 
+    <p><a href="https://www.andresmh.com/">Andrés Monroy-Hernández</a>, principal research scientist at <a href="https://research.snap.com/">Snap Inc.</a>, on Human-Computer Interaction. <b>11.18.20 at 5pm ET</b>. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHTkJdQg8OvxAeupEFWgoQD_s-8aWJ-1CmrC4gBjz8i1CrOA/viewform?usp=sf_link">RSVP here</a>.</p>
+    <p><a href="https://www.accessnow.org/profile/isedua-oribhabor/">Isedua Oribhabor</a>, author at <a href="https://www.accessnow.org/">Access Now</a>, on digital human rights. <b>12.10.20 at 6pm ET</b>.</p>
     </div>
     <!-- end intiative-info -->
     <div class="initiative-image">
@@ -149,7 +159,7 @@ $(document).ready(function(){
 
     <p>This year, JuST Hack will center around issues of educational engagement and equity as traditional K-12 learning moves online. Participants will have the opportunity to design creative solutions to new challenges posed by virtual education. Central to our mission is the inclusion of the stakeholders &mdash; K-12 students, teachers, and administrators &mdash; in every step of the design process.</p>
 
-    <p style="color:#F03E4E">Coming this winter.</p>
+    <p style="color:#F03E4E">Coming this Spring.</p>
     </div>
     <!-- end intiative-info -->
     </div>
@@ -161,7 +171,7 @@ $(document).ready(function(){
     <h2> Wintersession Course </h2>
     <p> This year, we will be holding a Princeton Wintersession Course, focusing on technology, design, and social good. The course will be led by undergrads, grad students, as well as faculty.</p>
 
-    <p style="color:#F03E4E">Coming this winter.</p>
+    <p style="color:#F03E4E">Coming this Winter.</p>
     </div>
     <!-- end intiative-info -->
     <div class="initiative-image">
@@ -178,14 +188,27 @@ $(document).ready(function(){
   <div class="section">
     <h3 class="overline">GET INVOLVED</h3>
     <h1 class="heading"> Contact Us </h1>
-    <p> If you are interested in receiving updates about any of the above initiatives, or would like to take on an organizing role, please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0-FGxoYu-f3tNDZtOUo_SGZu7GE24hulQdtcD28qKAX5GXg/viewform?usp=sf_link">this form</a>.</p>
-    <p>If you have any questions, ideas, or just want to chat, please reach out to us at <a href="mailto: aelgamal@princeton.edu">aelgamal@princeton.edu</a>.</p>
+    <p> If you are interested in receiving updates about any of the above initiatives, or would like to join the team, please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0-FGxoYu-f3tNDZtOUo_SGZu7GE24hulQdtcD28qKAX5GXg/viewform?usp=sf_link">this form</a>.</p>
+    <p>If you have any questions, ideas, or just want to chat, you can reach us at <a href="mailto: justtech@princeton.edu">justtech@princeton.edu</a>.</p>
   </div>
-
 
     <div>
     <img style="position: absolute; width: 100%" src="footer-image.svg">
     </div>
     <script src="script.js"></script>
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>
