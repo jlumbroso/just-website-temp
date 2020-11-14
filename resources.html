@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JuST</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/wqh3gxw.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+  </head>
+
+  <body>
+    <div class="topnav navbar sticky">
+  <a href="index.html"><img src="logo.svg" style="height: 37px; margin-top: -7px;"></a>
+  <div class="topnav-right">
+    <a class="active" href="resources.html">Resources</a>
+  </div>
+</div>
+
+
+    <!-- <div id="banner"><p><strong>UPCOMING EVENT: Using Data to Make Maps Fairer,</strong> with Professor Sam Wang. September 8th at 4:00pm ET. Register <a style="color: white" href="https://forms.gle/J8TL1qLPaXsZpPUm9" target="_blank">here</a>.</p></div> -->
+
+  <div style="height: 100px"></div>
+  </div>
+  <div class="section" style="margin-top: 0px; padding-top: 0px">
+    <h3 class="overline">PLACES TO LOOK</h3>
+    <h1 class="page-heading" style="margin-top: 0px; padding-top: 0px"> Resources </h1>
+      <h3>Programs and Clubs</h3>
+<p>
+<a href="https://www.cs.princeton.edu/ugrad/get-involved/pwics">Women in Computer Science (PWiCS)</a> "aims to help mentor and support women in the computer science department. They hold a variety of events, from speakers to interview workshops to purely social events."
+</p>
+<p>
+<a href="https://nsbe.princeton.edu/">The Princeton University Chapter of the National Society of Black Engineers (NSBE)</a> promotes academic excellence through the form of tutoring, mentoring and incentive programs. The mission of NSBE is “To increase the number of culturally responsible black engineers who excel academically succeed professionally and positively impact the community.”
+</p>
+<p>
+<a href="https://rehack.co/">Rehack</a> by <a href="https://www.princetoneclub.com/">Princeton E-Club</a> is a "reverse hackathon" where participants redesign existing technologies to foster "greater and healthier relationships between people and technology."
+</p>
+<p>
+<a href="https://www.envision-future.org/">Envision</a> is an annual student-run conference that "brings together current and future engineers, policy makers, scientists, philosophers, business leaders, and others who will lead the world in intellectual innovation."
+</p>
+<p>
+<a href="https://undergraduateresearch.princeton.edu/programs/summer-programs/summer-programming-experiences-spe">Summer Programming Experiences (SPE)</a> "offers novice programmers an opportunity to gain experience by working on a creative and substantive programming project, in a supportive, fun, and enriching environment, with the regular guidance of a faculty or graduate student mentor."</p>
+<p>
+<a href="https://www.cs.princeton.edu/news/princeton-cs-puerto-rico">Princeton CS in Puerto Rico</a> is a program led by Dr. Alan Kaplan in which students help teach a version of COS 126 at the University of Puerto Rico Mayagüez and volunteer at rebuilding/recovery sites throughout the island. </a> 
+</p>
+<p>
+<a href="https://interface-pton.github.io/interface/">INTERFACE</a> is a group that "meets weekly on Sundays at 2PM ET to discuss the impacts and ethics of computing. Topics range from privacy and surveillance issues to education, security to labor policies."
+</p>
+
+<h3>Funding Opportunities</h3>
+<p>
+Center for Digital Humanities <a href="https://cdh.princeton.edu/grants/">Funding</a>
+</p>
+<p>
+Center for Information Technology Policy <a href="https://citp.princeton.edu/engage/internships/">Internship Funding</a>
+</p>
+  </div>
+
+
+    <div>
+    <img style="position: absolute; width: 100%" src="footer-image.svg">
+    </div>
+    <script src="script.js"></script>
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>
