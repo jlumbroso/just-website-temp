@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JuST</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/wqh3gxw.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "a1 a2 a3"
+    "a4 a5 a6";
+  grid-gap: 100px;
+  background-color: white;
+  grid-auto-columns: 1fr;
+}
+
+.profile {
+  text-align: center;
+  width: 80%;
+}
+
+.a1 {grid-area: a1}
+.a2 {grid-area: a2}
+.a3 {grid-area: a3}
+
+.a4 {grid-area: a4}
+.a5 {grid-area: a5}
+.a6 {grid-area: a6}
+
+@media screen and (max-width: 1000px) {
+  .grid-container {
+  display: grid;
+  grid-template-areas:
+    "a1"
+    "a2"
+    "a3"
+    "a4"
+    "a5"
+    "a6";
+  grid-gap: 100px;
+  background-color: white;
+  grid-auto-columns: 1fr;
+}
+}
+</style>
+  </head>
+
+  <body>
+    <div class="topnav navbar sticky">
+  <a href="index.html"><img src="logo.svg" style="height: 37px; margin-top: -7px;"></a>
+  <div class="topnav-right">
+    <a class="active" href="wintersession.html">Wintersession</a>
+    <a class="inactive" href="resources.html">Resources</a>
+  </div>
+</div>
+
+<div id="about" class="section" style="text-align: center; padding-top: 100px;">
+    <h3 class="overline">WINTERSESSION</h3>
+    <h1 class="page-heading" style="margin-top:0; padding-top: 0"> Design for Good </h1>
+    <p> Join us for five days of engaging speakers, design mini-projects, and conversations on current events. In this workshop, you will get an introduction to design methodologies, and have the opportunity to explore their applications to social media platforms. Be sure to join the Slack for event links. Looking forward to learning with you!</p>
+    
+    <p>This workshop was developed by, in no particular order: <a href="kjfeng.me">Kevin Feng</a>, <a href="https://www.cs.princeton.edu/~theanos/">Theano Stavrinos</a>, <a href="https://www.kylebarn.es/">Kyle Barnes</a>, <a href="https://www.linkedin.com/in/gdoroudian/">Gissoo Doroudian</a>, <a href="https://www.linkedin.com/in/olivia-kusio-77a868154/">Olivia Kusio</a>, <a href="https://www.cs.princeton.edu/people/profile/lumbroso">Jérémie Lumbroso</a>, and <a href="https://www.linkedin.com/in/amina-elgamal-435ab0177/">Amina Elgamal</a>.</p>
+
+    <p>If you have any technical issues, questions, ideas, or just want to chat, you can reach us at <a href="mailto: justtech@princeton.edu">justtech@princeton.edu</a>. To join JuST, please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0-FGxoYu-f3tNDZtOUo_SGZu7GE24hulQdtcD28qKAX5GXg/viewform?usp=sf_link">this form</a>.</p>
+    
+    <div class="grid-container" style="margin-top: 100px">
+      <div class="a1">
+        <img class="profile" src="gissoodoroudian.png">
+        <h4> <a href="https://dynamicdor.com/">Gissoo Doroudian</a></h4>
+        <p> Gissoo is a User Experience Designer at <a href="https://cdh.princeton.edu">the Center for Digital Humanities (CDH)</a> at Princeton University, and has recently also started working with<a href="https://oit.princeton.edu">the Office of Information Technology</a> and <a href="https://www.thejustdatalab.com">the Ida B. Wells Just Data Lab</a> at the university. She is interested in creating frameworks for efficient workflows, humanistic search engines, and rethinking the education system.</p>
+      </div>
+
+      <div class="a2">
+        <img class="profile" src="joandonovan.png">
+        <h4><a href="https://www.hks.harvard.edu/faculty/joan-donovan">Joan Donovan</a></h4>
+        <p> Dr. Donovan is the Research Director of <a href="https://shorensteincenter.org/">the Shorenstein Center on Media, Politics and Public Policy</a>. She leads the field in examining internet and technology studies, online extremism, media manipulation, and disinformation campaigns. Dr. Donovan also heads <a href="https://shorensteincenter.org/programs/technology-social-change/">the Technology and Social Change Project (TaSC)</a>, which explores how media manipulation is a means to control public conversation, derail democracy, and disrupt society.</p>
+      </div>
+
+      <div class="a3">
+        <img class="profile" src="davecolangelo.png">
+        <h4> <a href="http://davecolangelo.com/">Dave Colangelo</a></h4>
+        <p> Professor Colangelo is an artist, educator, and researcher based in Toronto, Canada. He is a founding member of <a href="http://publicvisualizationstudio.co/">Public Visualization Studio</a>. His work focuses on urban media environments as sites for critical and creative engagements with the city, public art, and information. He is Assistant Professor of Digital Creation and Communication in <a href="https://www.ryerson.ca/procom/">the School of Professional Communication (FCAD)</a> at Ryerson University.</p>
+      </div>
+
+      <div class="a4">
+        <img class="profile" src="erikaharano.png">
+        <h4>  <a href="http://erikaharano.com/">Erika Harano</a> </h4>
+        <p> Erika is a queer, mixed race, anti-imperialist, japanese, fluid-femme movement facilitator, artist, creature, & polydimensional humxn. As an (occasional) design strategist, they co-create experiences with people and teams whose work is rooted in building and nurturing transformative spaces and worlds. Erika has collaborated with <a href="https://www.creativereactionlab.com/">Creative Reaction Lab</a>, <a href="https://designjustice.org/">the Design Justice Network</a>, <a href="https://www.blackwomxnflourish.co/">Black Womxn Flourish</a>, and <a href="http://www.consentfultech.io/">the Consentful Tech Project</a>. </p>
+      </div>
+
+      <div class="a5">
+        <img class="profile" src="nickpunt.png">
+        <h4> <a href="https://nickpunt.com/">Nick Punt</a> </h4>
+        <p> Nick is a product creator interested in elevating the human condition. He most recently published <a href="https://nickpunt.com/blog/deescalating-social-media/">De-Escalating Social Media</a>, a design proposal to make social media a kinder place, and <a href="https://nickpunt.com/blog/spaces/">Spaces</a>, a concept piece for a new approach to organizing digital experiences built around core human needs. Nick has a background in education, social media, new mediums and news.</p>
+      </div>
+
+      <div class="a6">
+        <img class="profile" src="caseynewton.png">
+        <h4> <a href="http://cnewton.org/">Casey Newton</a></h4>
+        <p> Casey writes <a href="https://www.platformer.news/">Platformer</a>, a publication about big tech and democracy. Previously on <a href="https://www.theverge.com/authors/casey-newton">The Verge</a>, Casey served as the Silicon Valley Editor, reporting on the people and products shaping the future of technology and culture.</p>
+      </div>
+
+    </div>
+
+    
+    <!-- end of row -->
+    </div> 
+    <!-- end of section -->
+
+    <div class="section">
+    
+        <div class="initiative">
+
+    <div class="initiative-image">
+    <h1 align="left">Monday 01.18.21</h1>
+    <h2 align="left">9am-11am ET</h2>
+    </div>
+    <!-- end initiative-image -->
+    <div class="initiative-info">
+    <p><strong>9:00 am ET:</strong> Welcome
+    </p>
+    <p><strong>9:10 am ET:</strong> Introductory design sprint
+    </p>
+    <p><strong>10:00 am ET:</strong>
+    Break (but we encourage you to meet other attendees in Gather.town)
+    </p>
+    <p><strong>10:10 am ET:</strong>
+    A brief introduction to design thinking history and the problematic aspects of design thinking with Gissoo Doroudian
+    </p>
+    <p><strong>10:30 am ET:</strong>
+    Explore existing social media alternatives
+    </p>
+    </div>
+    <!-- end intiative-info -->
+
+    </div>
+    <!-- end initiative -->
+
+  
+
+
+    <div class="initiative">
+  <div class="initiative-image">
+    <h1 align="left">Tuesday 01.19.21</h1>
+    <h2 align="left">9am-11am ET</h2>
+    </div>
+    <!-- end initiative-image -->
+    <div class="initiative-info">
+    <p><strong>9:00 am ET:</strong>
+    Continue exploring existing popular social media platforms and alternatives, ideating potential "problems" and solutions </p>
+    <p><strong>9:50 am ET:</strong>
+    Break (but we encourage you to meet other attendees in Gather.town) </p>
+    <p><strong>10:00 am ET:</strong> A discussion on online extremism, media manipulation, and disinformation campaigns with Joan Donovan </p>
+    </div>
+    <!-- end intiative-info -->
+    </div>
+
+
+
+
+    <div class="initiative">
+    <div class="initiative-image">
+    <h1 align="left">Wednesday 01.20.21</h1>
+    <h2 align="left">9am-11am ET</h2>
+    </div>
+    <!-- end initiative-image -->
+    <div class="initiative-info">
+    <p><strong>9:00 am ET:</strong>
+    A discussion on design thinking and design justice with Dave Colangelo
+    </p>
+    <p><strong>10:00 am ET:</strong>
+    Break (but we encourage you to meet other attendees in Gather.town)
+    </p>
+    <p><strong>10:10 am ET:</strong>
+    Prototype solutions for your social media "problem" with Nick Punt
+    </p>
+    </div>
+    <!-- end intiative-info -->
+
+    </div>
+    <!-- end initiative -->
+
+  
+
+
+    <div class="initiative">
+     <div class="initiative-image">
+    <h1 align="left">Thursday 01.21.21</h1>
+    <h2 align="left">9am-11am ET</h2>
+    </div>
+    <!-- end initiative-image -->
+    <div class="initiative-info">
+    <p><strong>9:00 am ET:</strong>
+    Practice usability testing
+    </p>
+    <p><strong>9:50 am ET:</strong>
+    Break (but we encourage you to meet other attendees in Gather.town)
+    </p>
+    <p><strong>10:00 am ET:</strong>
+    A discussion on UX design with a focus on user research from a design justice and consentful tech perspective with Erika Harano
+    </p>
+    </div>
+    <!-- end intiative-info -->
+    </div>
+
+    <div class="initiative">
+    <!-- end intiative-info -->
+    <div class="initiative-image">
+    <h1 align="left">Friday 01.22.21</h1>
+    <h2 align="left">9am-11am ET</h2>
+    </div>
+    <!-- end initiative-image -->
+      <div class="initiative-info">
+    <p><strong>9:00 am ET:</strong>
+    Conluding discussion and presentations
+    </p>
+    <p><strong>9:50 am ET:</strong>
+    Break (but we encourage you to meet other attendees in Gather.town)
+    </p>
+    <p><strong>10:00 am ET:</strong>
+    A discussion on social networks, big tech, and democracy with Casey Newton
+    </p>
+    </div>
+    <!-- end initiative -->
+
+  
+  </div>  
+  <!-- end section -->
+
+
+
+
+    <div>
+    <img style="left: 0; position: absolute; width: 100%" src="footer-image.svg">
+    </div>
+    <script src="script.js"></script>
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>
